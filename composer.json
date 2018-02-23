@@ -1,0 +1,17 @@
+{
+  "name": "feierabend",
+  "description": "test2",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "feierabend\\": "src/"
+    }
+  },
+  "require": {
+    "slim/slim": "^3.9",
+    "php-di/slim-bridge": "^1.1.2",
+    "slim/php-view": "^2.2.0",
+    "monolog/monolog": "^1.23.0"
+  },
+  "minimum-stability": "stable"
+}
