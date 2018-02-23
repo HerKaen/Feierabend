@@ -1,7 +1,3 @@
-<head>
-<link rel=stylesheet type="text/css" href="styles.css">
-</head>
-
 <form action='' method='POST''>
 
 <b>Kalenderwoche auswählen!</b>
@@ -60,28 +56,14 @@
     <option value="51">KW51</option>
     <option value="52">KW52</option>
 </select>
-<input type="submit" name="selector" value="Anzeigen">
+<!--<input type="submit" name="selector" value="Anzeigen">-->
+<input type="submit" name="selector" class="btn btn-primary" value="Anzeigen">
 
-<button id="myButton" class="float-left submit-button">Alle anzeigen</button>
+
+<button id="myButton" class="btn btn-primary">Alle anzeigen</button>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
         location.href = "";
     };
 </script>
-
-<a class="b" href="/">Home</a>
-
-
-<hr>
-<style>
-    .b
-    {
-        color:black; /* Schriftfarbe */
-        font-weight:normal; /* Schriftstil */
-        padding:10px; /* Innenabstand der Schrift */
-        width:90px; /* Breite des Buttons */
-        height:22px; /* Höhe des Buttons */
-        background:#ccddea; /* Hintergrundfarbe */
-    }
-</style>

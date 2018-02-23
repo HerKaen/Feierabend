@@ -9,14 +9,14 @@ $sql3 = "SELECT * FROM arbeitszeit";
 
 echo '<br>';
 
-echo "<table border='3' style='text-align: center; border-color:black; background-color:lightblue' width='50%';><tr style='font-weight: bold;'><td width='2%'>ID</td><td width='3%'>KW</td><td width='3%'>Datum</td><td width='5%'>Startstunde</td><td width='5%'>Startminute</td><td width='3%'>Pause</td><td width='3%'>Länger/Kürzer?</td></tr>";
+echo "<table border='3' style='text-align: center; border-color:black; background-color:lightblue' width='40%';><tr style='font-weight: bold;'><td width='2%'>ID</td><td width='3%'>KW</td><td width='3%'>Datum</td><td width='5%'>Startstunde</td><td width='5%'>Startminute</td><td width='3%'>Pause</td><td width='3%'>Länger/Kürzer?</td></tr>";
 
 echo "<tr><td>" . '<input type="text" name="Id2">' . "</td><td>" . '<input type="text" name="KW2">' . '</td><td>' . '<input type="text" name="Datum2">' . '</td><td>' . '<input type="text" name="Stunde2">' . "</td><td>" . '<input type="text" name="Minute2">' . "</td><td>" . '<input type="text" name="Pause2">' . "</td><td>" . '<input type="text" name="Overtime2">' . "</td></tr>";
 
 echo "</table>";
 
 echo '<br>';
-echo '<input type="submit" name="submit2" value="Änderung abschicken" style="background: lightblue">';
+echo '<input type="submit" name="submit2" value="Änderung abschicken" class="btn-primary">';
 
 echo '<br><br>';
 

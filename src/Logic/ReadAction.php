@@ -10,13 +10,8 @@ class ReadAction
     {
         echo '<br><center>';
 
-        require "Kalenderwochen.php";
-
-        require "Datensatz_Bearbeiten.php";
-
-        echo '<br>';
-
-        require "Datensatz_Loeschen.php";
+        require "Navigation.html";
+        require "Panel.html";
 
         $db = mysqli_connect("localhost", "root", "", "nico");
 
@@ -30,7 +25,7 @@ class ReadAction
 
         echo '<br>';
 
-        echo "<table border='3' style='text-align: center; border-color:black; background-color:lightgrey' width='50%';><tr style='font-weight: bold;'><td width='2%'>ID</td><td width='2%'>KW</td><td width='3%'>Datum</td><td width='5%'>Startzeit</td><td width='5%'>Pause</td><td width='3%'>Feierabend?</td><td width='3%'>Länger/Kürzer?</td></tr>";
+        echo "<table border='3' style='text-align: center; border-color:black; background-color:yellowgreen' width='50%';><tr style='font-weight: bold; color:darkslategrey;'><td width='2%'>ID</td><td width='2%'>KW</td><td width='3%'>Datum</td><td width='5%'>Startzeit</td><td width='5%'>Pause</td><td width='3%'>Feierabend?</td><td width='3%'>Länger/Kürzer?</td></tr>";
 
         while ($row = mysqli_fetch_assoc($result)) {
             $jetzt = mktime($row['Stunde'], $row['Minute'], 0, 0, 0, 0);
@@ -57,5 +52,28 @@ class ReadAction
                 echo "<h2 style='color:dodgerblue'>Überstunden diese Woche: <b style='color:red'>" . $row2['Summe'] . "</b> Minuten</h2>";
             }
         }
+        echo '<script>';
+        echo '$("#hiddendiv1").hide();';
+        echo '$("button").on("click", function(e){';
+        echo 'e.preventDefault();';
+        echo '$("#hiddendiv1").toggle();';
+        echo '});';
+        echo '</script>';
+
+        echo '<script>';
+        echo '$("#hiddendiv2").hide();';
+        echo '$("button").on("click", function(e){';
+        echo 'e.preventDefault();';
+        echo '$("#hiddendiv2").toggle();';
+        echo '});';
+        echo '</script>';
+
+        echo '<script>';
+        echo '$("#hiddendiv3").hide();';
+        echo '$("button").on("click", function(e){';
+        echo 'e.preventDefault();';
+        echo '$("#hiddendiv3").toggle();';
+        echo '});';
+        echo '</script>';
     }
 }

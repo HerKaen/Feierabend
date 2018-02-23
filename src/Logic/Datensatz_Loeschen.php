@@ -12,7 +12,7 @@ echo "<tr><td>" . '<input type="text" name="Id2">' . "</td></tr>";
 echo "</table>";
 
 echo '<br>';
-echo '<input type="submit" name="submit" value="Eintrag Löschen" style="background: orangered; color:white">';
+echo '<input type="submit" name="submit" value="Eintrag Löschen" class="btn-danger">';
 
 echo '<br><br>';
 

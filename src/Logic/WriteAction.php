@@ -2,7 +2,11 @@
 
 namespace feierabend\Logic;
 
-require "Formular_Eingabe.php";
+echo '<br><center>';
+
+require "Navigation.html";
+
+require "Formular.html";
 
 
 class WriteAction

@@ -27,5 +27,6 @@ class Bootstrap
     {
         $app->any("/", WriteAction::class);
         $app->any("/show", ReadAction::class);
+        $app->any("/ideas", IdeaAction::class);
     }
 }
