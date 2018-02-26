@@ -52,28 +52,5 @@ class ReadAction
                 echo "<h2 style='color:dodgerblue'>Überstunden diese Woche: <b style='color:red'>" . $row2['Summe'] . "</b> Minuten</h2>";
             }
         }
-        echo '<script>';
-        echo '$("#hiddendiv1").hide();';
-        echo '$("button").on("click", function(e){';
-        echo 'e.preventDefault();';
-        echo '$("#hiddendiv1").toggle();';
-        echo '});';
-        echo '</script>';
-
-        echo '<script>';
-        echo '$("#hiddendiv2").hide();';
-        echo '$("button").on("click", function(e){';
-        echo 'e.preventDefault();';
-        echo '$("#hiddendiv2").toggle();';
-        echo '});';
-        echo '</script>';
-
-        echo '<script>';
-        echo '$("#hiddendiv3").hide();';
-        echo '$("button").on("click", function(e){';
-        echo 'e.preventDefault();';
-        echo '$("#hiddendiv3").toggle();';
-        echo '});';
-        echo '</script>';
     }
 }
