@@ -1842,7 +1842,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1170px
+        width: 1450px
     }
 }
 
@@ -7224,5 +7224,6 @@ button.close {
     bottom: 2px;
     font-size: 17px;
 }
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */
