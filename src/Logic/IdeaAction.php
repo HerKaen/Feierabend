@@ -4,9 +4,9 @@ namespace feierabend\Logic;
 
 echo '<br><center>';
 
-require "Navigation.html";
+require "Formulare/Navigation.html";
 
-require "Ideen.html";
+require "Formulare/Ideen.html";
 
 class IdeaAction
 {
