@@ -50,7 +50,7 @@ if ($pn == 1) {
     }
 }
 $limit = 'LIMIT ' . ($pn - 1) * $itemsPerPage . ',' . $itemsPerPage;
-$sqly = "SELECT * from arbeitszeit $limit";
+$sqly = "SELECT * from arbeitszeit ORDER BY Id DESC $limit";
 
 $sql2 = mysqli_query($dbx, $sqly);
 

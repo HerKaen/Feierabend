@@ -26,7 +26,7 @@ class WriteAction
 
             $db = mysqli_connect("localhost", "root", "", "nico");
 
-            $eintrag = "INSERT INTO arbeitszeit (Datum, Stunde, Minute, Pause, KW) VALUES ('$datum', '$stunde', '$minute', '$pause', '$kw')";
+            $eintrag = "INSERT INTO arbeitszeit (Datum, Stundestart, Minutestart, Pause, KW) VALUES ('$datum', '$stunde', '$minute', '$pause', '$kw')";
 
             $eintragen = mysqli_query($db, $eintrag);
 
